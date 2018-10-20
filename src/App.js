@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import MappingTodoItem from './components/MappingTodoItem';
+import { Button } from 'antd';
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -109,7 +112,7 @@ class App extends Component {
         <text>'ul' 태그 안쪽에도 다른 컴포넌트로 보낼 인자를 연결시켜야 함.</text>
         <br></br>
         <input type="text" name="todo" placeholder="todo를 입력하세요!" ref={this.todoInput} />
-        <button onClick={this.handleSubmit}>추가</button>
+        <Button type='primary' onClick={this.handleSubmit}>추가</Button>
 
         <ul>
           {
